@@ -22,7 +22,7 @@ npm start
 
 # Server
 
-## Getting Started
+## How to use
 
 The packages required to run this backend project are listed in ```requirements.txt```.
 
