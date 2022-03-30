@@ -1,9 +1,42 @@
-# Graduation Tracker Frontend
+# Graduation Tracker 
+
+# Frontend
+## Getting started
+
+- Clone this repo
+```
+git clone https://gitlab.com/attentive-ai-dev/jarvis/orchestrator-monitoring-ui.git
+```
+
+- Install dependencies using npm
+```
+npm install
+```
+
+- Run in development
+```
+npm start
+```
+
+- Go to http://localhost:3000/
 
 
-# Graduation Tracker Backend
+## Production Build
 
-## How to use
+```
+npm run build-stage
+```
+
+## Deployment
+
+```
+npm install -g serve
+serve -s build -l 4000
+```
+
+# Backend
+
+## Getting Started
 
 The packages required to run this backend project are listed in ```requirements.txt```.
 
