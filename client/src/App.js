@@ -1,21 +1,30 @@
 import React from "react";
 import "./App.css";
-import Courses from "./components/courses/courses";
-import Profile from "./components/dashboard/profile";
-import Footer from "./components/Footer/footer";
-import Header from "./components/header/header";
-import CreateAccount from "./components/login/CreateAccountForm";
-import LoginForm from "./components/login/LoginFrom";
-
+import SignUp from "./Pages/SignUp";
+import Home from "./Pages/Home";
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import NavBar from "./Components/NavBar";
+import LoginPage from "./Pages/LoginPage";
 
 function App() {
   return (
   <div>
-    <Header/>
-    <Profile/>
-    <CreateAccount/>
-    <Courses/>
-    <Footer/>
+    <Router>
+      <div className="App">
+        <NavBar/>
+        <div>
+          <Routes>
+            <Route exact path = "/" element = {<Home/>} />
+          </Routes>
+          <Routes>
+            <Route exact path = "/logino" element = {<LoginPage/>} />
+          </Routes>
+          <Routes>
+            <Route exact path = "/signup" element = {<SignUp />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   </div>
   );
 }
