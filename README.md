@@ -1,40 +1,26 @@
 # Graduation Tracker 
 
-# Frontend
-## Getting started
-
-- Clone this repo
+## Getting Started
+Clone this repo
 ```
 git clone https://gitlab.com/attentive-ai-dev/jarvis/orchestrator-monitoring-ui.git
 ```
 
-- Install dependencies using npm
+# Client
+## How to use
+
+You will need to install dependencies using npm and run it in development. Go to http://localhost:3000/
+
 ```
-npm install
+cd client
 ```
 
-- Run in development
 ```
+npm install
 npm start
 ```
 
-- Go to http://localhost:3000/
-
-
-## Production Build
-
-```
-npm run build-stage
-```
-
-## Deployment
-
-```
-npm install -g serve
-serve -s build -l 4000
-```
-
-# Backend
+# Server
 
 ## Getting Started
 
