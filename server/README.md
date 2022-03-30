@@ -1,4 +1,4 @@
-# grad-req-app
+# Graduation Tracker Backend
 
 ## How to use
 
