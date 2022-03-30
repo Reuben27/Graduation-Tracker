@@ -1,5 +1,5 @@
 import React from "react";
-import {DropdownButton, Dropdown} from 'react-bootstrap';
+import {DropdownButton, Dropdown, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 
@@ -30,14 +30,15 @@ const Home = (props) => {
 
   return (
     <div className="bg-gray-500 p-10">
-      <div className="flex justify-between max-w-4xl m-auto bg-slate-50 px-5 py-2 rounded-md">
-      <DropdownButton id="dropdown-item-button" title="Add Courses" className=" m-3 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-      <Dropdown.ItemText>Select Courses</Dropdown.ItemText>
-      <Dropdown.Item id = "cs301" as="button" onClick={() => {add1()}}>CS 301</Dropdown.Item>
-      <Dropdown.Item id = "cs102" as="button" onClick={() => {add2()}}>CS 102</Dropdown.Item>
-      <Dropdown.Item id = "es104" as="button" onClick={() => {add3()}}>ES 104</Dropdown.Item>
-      </DropdownButton>
-       
+      <div className="flex justify-between max-w-4xl m-auto bg-slate-50 rounded-md">
+        <DropdownButton id="dropdown-item-button" title="Add Courses" className="m-3 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          <Dropdown.ItemText>Select Courses</Dropdown.ItemText>
+          <Dropdown.Item id = "cs301" as="button" onClick={() => {add1()}}>CS 301</Dropdown.Item>
+          <Dropdown.Item id = "cs102" as="button" onClick={() => {add2()}}>CS 102</Dropdown.Item>
+          <Dropdown.Item id = "es104" as="button" onClick={() => {add3()}}>ES 104</Dropdown.Item>
+        </DropdownButton>
+
+        <Button className="m-3 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Paste Data</Button>
       </div>
       <div class="fixTableHead overflow-y-auto h-36 bg-slate-100 max-w-4xl m-auto mt-5 rounded">
         <table className=" border-collapse w-full text-center">
