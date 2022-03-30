@@ -56,6 +56,6 @@ Make sure to configure CORS in order to connect to React or any other frontend.
 
 ## Database Schema
 
-![Image](./media/schema.png)
+![Image](./server/media/schema.png)
 
 ---
